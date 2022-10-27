@@ -40,14 +40,15 @@ console.log(getValidation);
         //  onchange u want to update d value use this
     }
 const formValidationCheck = ()=>{
-    setValidation({
+    const value = {
         fullname:alphaNumericValidaion(getForm.fullname),
         lastname:alphaNumericValidaion(getForm.lastname),
         email:emailValidaion(getForm.email),
         password:passwordValidaion(getForm.password),
         telephone:telephoneValidaion(getForm.telephone),
         bio:bioValidaion(getForm.bio),
-        })
+        }
+    setValidation(value);
         // for validation check
 }
 
